@@ -3,7 +3,7 @@
 Welcome to Snehal Ashok Salvi's portfolio! This is a web-based portfolio showcasing my professional experience, skills, projects, and more.
 
 ## Portfolio
-[Snehal's Portfolio]()
+[Snehal's Portfolio](https://snehal-salvi.github.io/Portfolio)
 
 ## Table of Contents
 
