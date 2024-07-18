@@ -4,23 +4,7 @@
 @media (max-width: 1200px) {
     
 
-    .profile-picture {
-        width: 250px;
-        height: 250px;
-        margin-top: -20px;
-    }
-    .profile-picture img {
-        width: 250px;
-        height: 250px;
-    }
-    .name h1 {
-        font-size: 25px;
-        margin-left: 210px;
-    }
-    .name h3 {
-        font-size: 20px;
-        margin-left: 250px;
-    }
+   
     .right-section li {
         font-size: 18px;
     }
@@ -37,25 +21,8 @@
     .left-section, .right-section {
         padding: 10px;
     }
-    .profile-picture {
-        width: 200px;
-        height: 200px;
-        margin-top: -40px;
-    }
-    .profile-picture img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .name h1 {
-        font-size: 25px;
-        margin-left: 180px;
-    }
-    .name h3 {
-        font-size: 20px;
-        margin-left: 200px;
-    }
-   
+  
+  
     .right-section li {
         font-size: 16px;
     }
@@ -76,6 +43,8 @@
 
 @media (max-width: 786px) {
 
+  
+
     .section-header,.header-img, .heading{
         height: 8vh;
         padding: 0px;
@@ -86,18 +55,7 @@
         flex-direction: column;
     }
 
-    .profile-picture{
-        margin-top: 2px;
-    }
-
-    .profile-picture img{
-        width: 200px;
-    height: 200px;
-    }
-
-    .name h1{
-        font-size: 40px;
-    }
+    
    
     
     .about-section{
@@ -222,17 +180,17 @@
     
 }
 
-@media (max-width: 530px) {
-    .profile-picture{
-        margin-top: -10px;
-    }
-
-    .name h1{
-        font-size: 20px;
-    }
-}
-
+ 
 @media (max-width: 468px) {
+
+    .name h1 {
+      
+        font-size: 30px;
+    }
+
+    .name h3{
+        font-size: 15px;
+    }
 
     .section-header,.header-img, .heading{
         height: 8vh;
@@ -240,18 +198,7 @@
         
     }
 
-    .profile-picture{
-        margin-top: -20px;
-    }
-
-    .profile-picture img{
-        width: 200px;
-    height: 200px;
-    }
-
-    .name h1{
-        font-size: 20px;
-    }
+    
 
     .right-section li {
         font-size: 12px;
