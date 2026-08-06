@@ -23,20 +23,19 @@ This portfolio is a comprehensive showcase of my skills, experience, and project
 ## Technologies Used
 
 - HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
+- CSS3 (custom properties, no framework)
+- JavaScript (vanilla, no build step)
+- Google Fonts (Inter, JetBrains Mono)
 - Font Awesome
- 
 
 ## Features
 
 - Responsive design
 - Detailed sections on experience, skills, projects, and more
-- Easy navigation with a fixed navbar
+- Easy navigation with a fixed navbar and mobile slide-in menu
+- Years-of-experience figure that updates itself automatically
 - Downloadable resume
 - External links to LinkedIn and GitHub profiles
-- Theme toggle for dark and light modes
 
 ## Sections
 
@@ -68,7 +67,6 @@ To run this project locally, follow these steps:
 - Navigate through different sections using the navbar.
 - Click on the resume link to view or download the resume.
 - Explore projects by clicking on the provided GitHub links.
-- Switch between dark and light modes using the theme toggle icon.
 
 ## Contact
 

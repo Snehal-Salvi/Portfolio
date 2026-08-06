@@ -3,597 +3,474 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Snehal Salvi — Full-Stack Software Engineer with 4+ years building React and Node.js applications for enterprise and fintech platforms.">
+    <meta property="og:title" content="Snehal Salvi — Full-Stack Software Engineer">
+    <meta property="og:description" content="Portfolio of Snehal Salvi, a full-stack engineer building React and Node.js applications for enterprise and fintech platforms.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://snehal-salvi.github.io/Portfolio">
+    <meta property="og:image" content="https://snehal-salvi.github.io/Portfolio/assets/profile-pic.png">
+    <meta name="twitter:card" content="summary">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <title>Snehal's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>Snehal Salvi — Full-Stack Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0b69d70df4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="mediaQueries.css">
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                  
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certificates">Certificates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center">
-                        <i class="fa-solid fa-moon" id="toggle-icon"></i>
-                        <i class="fa-regular fa-sun" id="toggle-icon" style="display: none;"></i>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<header class="nav">
+    <nav class="nav-inner">
+        <a href="#home" class="nav-logo">SS</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 </header>
 
-<section id="home">
-    <div class="home-container">
-      <div class="left-section">
-        <div class="profile-container">
+<main>
 
-          <div class="profile-picture">
-            <img src="./assets/profile-pic.png" alt="profile-picture"/> 
+    <section id="home" class="hero">
+        <div class="hero-inner">
+            <p class="eyebrow">Hi, I'm</p>
+            <h1 class="hero-title">Snehal Salvi</h1>
+            <p class="hero-role">Full-Stack Software Engineer</p>
+            <p class="hero-summary">I build <span class="accent">React</span> and <span class="accent">Node.js</span> applications for enterprise and fintech platforms — <span class="yoe-number">4</span>+ years turning complex requirements into fast, secure, production software.</p>
+            <div class="hero-actions">
+                <a href="https://drive.google.com/file/d/1flWTvYe3-BviVygGsKwd_AI1VX-ZkQdU/view?usp=drive_link" target="_blank" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> Resume</a>
+                <a href="#projects" class="btn btn-secondary">View Work</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/Snehal-Salvi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/snehalsalvi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:snehalsalvi099@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
-      </div>
-            <div class="name-container">
-                <div class="name">
-                    <h1>SNEHAL SALVI</h1>
-                    <h3><i class="fa-solid fa-building"></i> Software Development Engineer</h3>
-                    <h3><i class="fa-solid fa-laptop-code"></i> 3+ YOE</h3>
-               
-                   
+        <div class="hero-photo">
+            <div class="hero-photo-glow"></div>
+            <div class="hero-photo-ring">
+                <img src="./assets/profile-pic.png" alt="Snehal Salvi"/>
+            </div>
+            <div class="hero-badge"><i class="fa-solid fa-location-dot"></i> Mumbai, India</div>
+        </div>
+        <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><span></span></a>
+    </section>
+
+    <section id="about" class="section reveal">
+        <p class="eyebrow">01 — About</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm a full-stack engineer who enjoys turning ambiguous requirements into fast, secure, production-ready software. Over the past <span class="yoe-number">4</span>+ years, I've shipped React and Node.js applications for enterprise and fintech clients — from schema design to cloud deployment.</p>
+                <p>At <b>Data Sutram</b>, I'm building a debt collection platform used by <b>20+ banking and NBFC clients</b>, focused on performance at scale and closing security findings before they become blockers. Before that, at <b>Accenture</b>, I built RESTful APIs and interactive data visualizations for enterprise dashboards.</p>
+                <p>Outside of client work, I like exploring new tools and building side projects — a few of them are below.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number"><span class="yoe-number">4</span>+</span>
+                    <span class="stat-label">Years of Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Enterprise Clients Served</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Projects Shipped</span>
                 </div>
             </div>
-       
+        </div>
+    </section>
 
-        <div class="resume-container">
-            <i class="fa-solid fa-file-pdf"></i>&nbsp;<a href="https://drive.google.com/file/d/1flWTvYe3-BviVygGsKwd_AI1VX-ZkQdU/view?usp=drive_link" target="_blank">Resume</a> 
-        </div>
-    
-    </div>
-        <div class="right-section">
-            <ul>
-                <li><i class="fas fa-user"></i>&nbsp;&nbsp;<span> Name: </span> &nbsp;Snehal Ashok Salvi<i class="fa-solid fa-circle bullet"></i></li>
-                <li><i class="fas fa-building"></i>&nbsp;&nbsp; <span>Company Name:</span>&nbsp;Data Sutram<i class="fa-solid fa-circle bullet"></i></li>
-                <li><i class="fas fa-briefcase"></i>&nbsp;&nbsp; <span>Position: </span>&nbsp;Software Development Engineer<i class="fa-solid fa-circle bullet"></i></li>
-                <li><i class="fas fa-clock"></i> &nbsp;&nbsp;<span> Experience:</span>&nbsp;3+ Years<i class="fa-solid fa-circle bullet"></i></li>
-               
-                <li><i class="fas fa-envelope"></i> &nbsp;&nbsp;<span>Email:</span>&nbsp; <a href="mailto:snehalsalvi099@gmail.com"> snehalsalvi099@gmail.com</a><i class="fa-solid fa-circle bullet"></i></li>
-                <li><i class="fas fa-phone"></i>&nbsp;&nbsp; <span>Phone: </span>&nbsp;7448064203<i class="fa-solid fa-circle bullet"></i></li>
-                <li><i class="fab fa-linkedin"></i> &nbsp;&nbsp;<span>LinkedIn:</span>&nbsp; <a href="https://linkedin.com/in/snehalsalvi" target="_blank"> https://linkedin.com/in/snehalsalvi</a><i class="fa-solid fa-circle bullet"></i></li>
-                <li><i class="fab fa-github"></i> &nbsp;&nbsp;<span>GitHub:</span>&nbsp; <a href="https://github.com/Snehal-Salvi" target="_blank"> https://github.com/Snehal-Salvi</a><i class="fa-solid fa-circle bullet"></i></li>
-                 
-                </li>
-            </ul>
-        </div>
-        
-      </div>
-</section>
+    <section id="experience" class="section reveal">
+        <p class="eyebrow">02 — Experience</p>
+        <h2 class="section-title">Where I've Worked</h2>
+        <div class="timeline">
 
-<section id="about">
- 
-    <div class="section-header">
-        <div class="header-img">
-            <img src="./assets/about.png" alt="side-img"/>
-        </div>
-        <div class="heading">About</div>
-        <div class="header-img">
-            <img src="./assets/about.png" alt="side-img"/>
-        </div>
-      </div>
-
-      <div class="section-body" >
-      
-            <div class="about-section">
-                <p>Hi, I'm <b>Snehal Ashok Salvi</b>, a <b>Software Development Engineer</b> with over <b>3 years of experience</b>. 
-                    <br/>Currently, I am working at <b>Data Sutram</b> where I specialize in building and maintaining scalable applications. 
-                    <br/>I am passionate about coding and continuously improving my skills to deliver high-quality software solutions. 
-                    <br/>My expertise includes working with a variety of technologies and frameworks such as <b>React JS, Node JS, Next JS, Nest JS</b> to meet diverse client needs.</p>
-                
-                <p>My journey in the tech industry has been fueled by a commitment to learning and a desire to <b>solve complex problems</b>. I enjoy collaborating with cross-functional teams to bring <b>innovative ideas</b> to life.</p>
-        
-                <p>Beyond work, I am an avid learner who enjoys exploring new technologies and staying updated with industry trends. When I'm not coding, you can find me reading tech blogs, participating in <b>hackathons</b>, or contributing to <b>open-source projects</b>.</p>
-                
-                <p>Feel free to connect with me on <a href="https://linkedin.com/in/snehalsalvi" target="_blank">LinkedIn</a> or check out my projects on <a href="https://github.com/Snehal-Salvi" target="_blank">GitHub</a>.</p>
-            </div>
-         
-      </div>
-    
-</section>
-
-<section id="experience">
-    <div class="section-header">
-        <div class="header-img">
-            <img src="./assets/experience.png" alt="side-img"/>
-        </div>
-        <div class="heading">Experience</div>
-        <div class="header-img">
-            <img src="./assets/experience.png" alt="side-img"/>
-        </div>
-      </div>
-
-      <div class="experience-section">
-        
-        <div class="experience-details">
-          <div class="company-logo-name">
-              <img class="company-logo" src="./assets/data-sutram-logo.png" alt="accenture-logo"/>
-              <div class="company-name" style="color: #19977b;">Data Sutram</div>
-          </div>
-          <div class="company-designation" >
-              <i class="fas fa-briefcase fa-icon"></i> Software Development Engineer
-          </div>
-          <div class="company-period">
-              <i class="far fa-calendar fa-icon"></i> November 2024 - Present 
-               <br/>   <i class="fa-solid fa-location-dot"></i> Mumbai, India 
-          </div>
-          <div class="work-info">
-              <ul>
-                  <li>Working on a data-driven project using Next.js and NestJS, focused on validating customer data and generating
-                    risk scores.</li>
-                  <li>Delivered the solution to 10+ clients, ensuring consistent performance, accuracy, and user experience.</li>
-                  <li>Added JWT middleware to resolve VAPT reported website interception issues, ensuring compliance with security
-                    best practices.</li>
-              </ul>
-  
-          </div>
-        </div>
-        <hr/>
-      <div class="experience-details">
-        <div class="company-logo-name">
-            <img class="company-logo" src="./assets/accenture-logo.png" alt="accenture-logo"/>
-            <div class="company-name" style="color: #6302a0;">Accenture</div>
-        </div>
-        <div class="company-designation" >
-            <i class="fas fa-briefcase fa-icon"></i> Application Developer Analyst
-        </div>
-        <div class="company-period">
-            <i class="far fa-calendar fa-icon"></i> December 2021 - November 2024 
-            <br/>     <i class="fa-solid fa-location-dot"></i> Mumbai, India 
-        </div>
-        <div class="work-info">
-            <ul>
-                <li>Developed a robust RESTful API, integrating ReactJS and NodeJS to streamline data management and ensure
-                    seamless user experience.</li>
-                <li>Implemented OAuth for secure and efficient user authentication.</li>
-                <li>Extensive experience working with SQL Server, crafting and optimizing queries to extract meaningful insights
-                    from the database.</li>
-            </ul>
-
-        </div>
-      </div>
-      <hr/>
-      <div class="experience-details">
-        <div class="company-logo-name">
-            <img class="company-logo" src="./assets/coding-ninja-logo.png" alt="coding-ninja-logo"/>
-            <div class="company-name" style="color: #f4731f;">Coding Ninjas</div>
-        </div>
-        <div class="company-designation"  >
-            <i class="fas fa-briefcase fa-icon"></i> Teaching Assistant  
-        </div>
-        <div class="company-period">
-            <i class="far fa-calendar fa-icon"></i> 3 Months Internship 
-             &nbsp; &nbsp;    <i class="fa-solid fa-location-dot"></i> Remote 
-        </div>
-        <div class="work-info">
-            <ul>
-                <li>Clarified uncertainties for students enrolled in the course, fostering a dynamic learning environment.</li>
-                <li>Assisted students in understanding course material and debugging code to find solutions.</li>
-                <li>Conducted regular review sessions to reinforce key concepts and prepare students for exams.</li>
-            </ul>
- 
-        </div>
-      </div>
-      
-      <i class="fas fa-plane airplane-icon"></i>
-    </div>
-
-</section>
-
-<section id="skills">
-    <div class="section-header">
-      <div class="header-img">
-        <img src="./assets/skills.png" alt="side-img" />
-      </div>
-      <div class="heading">Skills</div>
-      <div class="header-img">
-        <img src="./assets/skills.png" alt="side-img" />
-      </div>
-    </div>
-  
-    <div class="skills-section">
-      <table>
-        <thead>
-          <tr>
-            <th>Front End</th>
-            <td data-skill="90"><img src="./assets/reactjs.png" alt="React.js Logo" /></td>
-            <td data-skill="85"><img src="./assets/nextjs.png" alt="Next.js Logo" /></td>
-            <td data-skill="95"><img src="./assets/javascript.png" alt="JavaScript Logo" /></td>
-            <td data-skill="80"><img src="./assets/typescript.png" alt="TypeScript Logo" /></td>
-            <td data-skill="95"><img src="./assets/html.png" alt="HTML5 Logo" /></td>
-            <td data-skill="90"><img src="./assets/css.png" alt="CSS3 Logo" /></td>
-            <td data-skill="85"><img src="./assets/bootstrap.png" alt="Bootstrap Logo" /></td>
-            <td data-skill="80"><img src="./assets/tailwind.png" alt="Tailwind CSS Logo" /></td>
-            <td data-skill="75"><img src="./assets/jquery.png" alt="JQuery Logo" /></td>
-          </tr>
-          <tr>
-            <th>Back End</th>
-            <td data-skill="85"><img src="./assets/nodejs.png" alt="Node.js Logo" /></td>
-            <td data-skill="80"><img src="./assets/expressjs.png" alt="Express.js Logo" /></td>
-            <td data-skill="70"><img src="./assets/java.png" alt="Java Logo" /></td>
-            <td data-skill="75"><img src="./assets/dotnet.png" alt=".NET Logo" /></td>
-          </tr>
-          <tr>
-            <th>Database</th>
-            <td data-skill="80"><img src="./assets/sql.png" alt="SQL Logo" /></td>
-            <td data-skill="75"><img src="./assets/mongodb.png" alt="MongoDB Logo" /></td>
-            <td data-skill="70"><img src="./assets/postgres.png" alt="PostgreSQL Logo" /></td>
-          </tr>
-        </thead>
-      </table>
-    </div>
-  </section>
-  
-
-  <section id="education">
-    <div class="section-header">
-      <div class="header-img">
-        <img src="./assets/education.png" alt="education-img"/>
-      </div>
-      <div class="heading">Education</div>
-      <div class="header-img">
-        <img src="./assets/education.png" alt="education-img"/>
-      </div>
-    </div>
-    
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="./assets/dbatu.png" alt="university-icon"/>
-        </div>
-        <div class="timeline-content">
-          <h3><i class="fa-solid fa-graduation-cap"></i> BTech in Civil Engineering</h3>
-          <p><i class="fa-solid fa-building-columns"></i> DR. Babasaheb Ambedkar Technological
-            University, Lonere</p>
-          <span><i class="fa-regular fa-calendar"></i> 2017 - 2021</span>
-          <span><i class="fa-solid fa-location-dot"></i> Raigad, India</span>
-          <span><i class="fa-solid fa-percent"></i> CGPA: 8.23</span>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="./assets/university.png" alt="university-icon"/>
-        </div>
-        <div class="timeline-content">
-          <h3><i class="fa-solid fa-graduation-cap"></i> Higher Secondary Education</h3>
-          <p><i class="fa-solid fa-building-columns"></i> Rajabhau Mone College, Goregaon</p>
-          <span><i class="fa-regular fa-calendar"></i> 2017</span>
-          <span><i class="fa-solid fa-location-dot"></i> Raigad, India</span>
-          <span><i class="fa-solid fa-percent"></i> Percentage: 75.54 %</span>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <img src="./assets/university.png" alt="university-icon"/>
-        </div>
-        <div class="timeline-content">
-          <h3><i class="fa-solid fa-graduation-cap"></i> Secondary School Education</h3>
-          <p><i class="fa-solid fa-building-columns"></i> N. M. Joshi Vidya Bhavan, Goregaon</p>
-          <span><i class="fa-regular fa-calendar"></i> 2015</span>
-          <span><i class="fa-solid fa-location-dot"></i> Raigad, India</span>
-          <span><i class="fa-solid fa-percent"></i> Percentage: 90.20 %</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <section id="projects">
-    <div class="section-header">
-        <div class="header-img">
-            <img src="./assets/project.png" alt="side-img"/>
-        </div>
-        <div class="heading">Projects</div>
-        <div class="header-img">
-            <img src="./assets/project.png" alt="side-img"/>
-        </div>
-    </div>
-
-   
-      <div class="section-body">
-          <div class="project-section">
-              <div class="project-card">
-                  <video src="https://github.com/Snehal-Salvi/homemaid-app/assets/125987932/de197fb3-8e73-4478-ba3c-afcd86e7c12d" class="project-video" controls data-video-src="https://github.com/Snehal-Salvi/homemaid-app/assets/125987932/de197fb3-8e73-4478-ba3c-afcd86e7c12d"></video>
-                  <div class="project-info">
-                      <h3 class="project-title">HomeMaid App</h3>
-                      <p class="project-description">HomeMaid web application allows users to easily book maids for various household chores.</p>
-                      <div class="project-tech-stack">
-                          <span class="tech-item"><i class="fab fa-js-square"></i> JavaScript</span>
-                          <span class="tech-item"><i class="fab fa-react"></i> React</span>
-                          <span class="tech-item"><i class="fab fa-node-js"></i> Node.js</span>
-                          <span class="tech-item"><i class="fab fa-html5"></i> HTML</span>
-                          <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS</span>
-                      </div>
-                      <div class="project-links">
-                          <a href="https://667bc483d506d3c28237e931--lucky-sunflower-c1d185.netlify.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                          <a href="https://github.com/Snehal-Salvi/homemaid-app" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="project-card">
-                  <video src="https://github.com/Snehal-Salvi/chatter-up/assets/125987932/094d84a6-a7e9-4b38-87ad-6b17b15871b2" class="project-video" controls data-video-src="https://github.com/Snehal-Salvi/chatter-up/assets/125987932/094d84a6-a7e9-4b38-87ad-6b17b15871b2"></video>
-                  <div class="project-info">
-                      <h3 class="project-title">Chatter Up</h3>
-                      <p class="project-description">Chatter Up is a real-time chat application that allows users to join rooms and communicate with others globally.</p>
-                      <div class="project-tech-stack">
-                          <span class="tech-item"><i class="fab fa-js-square"></i> JavaScript</span>
-                          <span class="tech-item"><i class="fab fa-react"></i> React</span>
-                          <span class="tech-item"><i class="fab fa-node-js"></i> Node.js</span>
-                          <span class="tech-item"><i class="fab fa-html5"></i> HTML</span>
-                          <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS</span>
-                      </div>
-                      <div class="project-links">
-                          <a href="https://chatter-up-frontend.onrender.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                          <a href="https://github.com/Snehal-Salvi/chatter-up" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="project-card">
-                <video src="https://github.com/Snehal-Salvi/to-do-App/assets/125987932/7171d547-cb97-42f6-b097-37a567bf24a3" class="project-video" controls data-video-src="https://github.com/Snehal-Salvi/to-do-App/assets/125987932/7171d547-cb97-42f6-b097-37a567bf24a3"></video>
- 
-                <div class="project-info">
-                    <h3 class="project-title">Taskly</h3>
-                    <p class="project-description">Taskly is a task management application built using React.js and integrated with a backend API for managing tasks.</p>
-                    <div class="project-tech-stack">
-                        <span class="tech-item"><i class="fab fa-js-square"></i> JavaScript</span>
-                        <span class="tech-item"><i class="fab fa-react"></i> React</span>
-                        <span class="tech-item"><i class="fab fa-node-js"></i> Node.js</span>
-                        <span class="tech-item"><i class="fab fa-html5"></i> HTML</span>
-                        <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS</span>
+            <div class="timeline-entry">
+                <div class="timeline-entry-header">
+                    <img class="timeline-logo" src="./assets/data-sutram-logo.png" alt="Data Sutram logo"/>
+                    <div>
+                        <h3>Software Development Engineer <span class="timeline-company">@ Data Sutram</span></h3>
+                        <p class="timeline-meta">November 2024 — Present · Mumbai, India</p>
                     </div>
+                </div>
+                <ul class="timeline-bullets">
+                    <li>Built and shipped features across the stack — React + TypeScript frontend, Node.js/Express services, MongoDB and SQL Server — for a debt collection platform delivered to 20+ enterprise banking and NBFC clients.</li>
+                    <li>Halved dashboard load time from ~10s to under 5s on views rendering up to 60,000 borrower records, using buffered pagination, debounced search, and route-level lazy loading.</li>
+                    <li>Closed 5+ VAPT findings and resolved Dependabot-reported dependency vulnerabilities across the frontend, clearing the security review required for enterprise client onboarding.</li>
+                    <li>Owned feature delivery end to end — API contract, schema, UI, and release — deploying to AWS EC2 behind Nginx with S3-backed storage, working with product and QA in a 4-engineer team.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-entry">
+                <div class="timeline-entry-header">
+                    <img class="timeline-logo" src="./assets/accenture-logo.png" alt="Accenture logo"/>
+                    <div>
+                        <h3>Application Developer <span class="timeline-company">@ Accenture</span></h3>
+                        <p class="timeline-meta">December 2021 — November 2024 · Mumbai, India</p>
+                    </div>
+                </div>
+                <ul class="timeline-bullets">
+                    <li>Designed and maintained RESTful APIs in Node.js/Express, consumed by React dashboards across two data-driven enterprise applications.</li>
+                    <li>Built interactive network graphs and data visualizations with D3.js and Cytoscape.js, rendering dynamically sized relationship datasets so client analysts could explore complex connections without engineering support.</li>
+                    <li>Practiced TDD and partnered with QA on defect triage across 10+ production releases, keeping deployments stable throughout.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-entry">
+                <div class="timeline-entry-header">
+                    <img class="timeline-logo" src="./assets/coding-ninja-logo.png" alt="Coding Ninjas logo"/>
+                    <div>
+                        <h3>Teaching Assistant <span class="timeline-company">@ Coding Ninjas</span></h3>
+                        <p class="timeline-meta">3-Month Internship · Remote</p>
+                    </div>
+                </div>
+                <ul class="timeline-bullets">
+                    <li>Clarified uncertainties for students enrolled in the course, fostering a dynamic learning environment.</li>
+                    <li>Assisted students in understanding course material and debugging code to find solutions.</li>
+                    <li>Conducted regular review sessions to reinforce key concepts and prepare students for exams.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+        <p class="eyebrow">03 — Skills</p>
+        <h2 class="section-title">Tools I Work With</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3 class="skill-category-title"><i class="fa-solid fa-code"></i> Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">JavaScript (ES6+)</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="skill-category-title"><i class="fa-solid fa-display"></i> Frontend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">React 18</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Redux</span>
+                    <span class="skill-tag">React Router</span>
+                    <span class="skill-tag">Material UI</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">D3.js</span>
+                    <span class="skill-tag">Cytoscape.js</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="skill-category-title"><i class="fa-solid fa-server"></i> Backend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">JWT</span>
+                    <span class="skill-tag">OAuth 2.0</span>
+                    <span class="skill-tag">Passport.js</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">BullMQ</span>
+                    <span class="skill-tag">Redis</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="skill-category-title"><i class="fa-solid fa-cloud"></i> Data &amp; Cloud</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MongoDB (Atlas)</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">AWS (EC2, S3)</span>
+                    <span class="skill-tag">Nginx</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">Netlify</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="skill-category-title"><i class="fa-solid fa-toolbox"></i> Tools &amp; Practices</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                    <span class="skill-tag">Vite</span>
+                    <span class="skill-tag">Jest</span>
+                    <span class="skill-tag">Axios</span>
+                    <span class="skill-tag">TDD</span>
+                    <span class="skill-tag">Agile</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+        <p class="eyebrow">04 — Projects</p>
+        <h2 class="section-title">Things I've Built</h2>
+        <div class="project-grid">
+
+            <article class="project-card">
+                <video class="project-media" src="https://github.com/user-attachments/assets/578bf2c7-4b24-4c0b-b4ac-34c4bff81431" controls data-video-src="https://github.com/user-attachments/assets/578bf2c7-4b24-4c0b-b4ac-34c4bff81431"></video>
+                <div class="project-body">
+                    <h3 class="project-title">Sahal</h3>
+                    <p class="project-desc">Sahal applies expression-aware cartoon face filters to multiple faces at once in a video, with independent per-face control, powered by a three-service AI pipeline.</p>
+                    <ul class="project-tags">
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>Redis</li>
+                    </ul>
                     <div class="project-links">
-                        <a href="https://668ae61b3756a837d6160ef8--brilliant-babka-2bcbf0.netlify.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="https://github.com/Snehal-Salvi/to-do-App" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://sa-hal.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Snehal-Salvi/Sahal" target="_blank"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
+            </article>
+
+            <article class="project-card">
+                <video class="project-media" src="https://github.com/user-attachments/assets/19e0ca14-c6db-4587-8cd8-4a415ec94773" controls data-video-src="https://github.com/user-attachments/assets/19e0ca14-c6db-4587-8cd8-4a415ec94773"></video>
+                <div class="project-body">
+                    <h3 class="project-title">Stitched</h3>
+                    <p class="project-desc">Stitched is a marketplace connecting customers with local tailors for custom stitching, with shop and order management for tailor accounts and a 3-step booking flow.</p>
+                    <ul class="project-tags">
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://stitched-app.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Snehal-Salvi/Stitched" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <video class="project-media" src="https://github.com/Snehal-Salvi/homemaid-app/assets/125987932/de197fb3-8e73-4478-ba3c-afcd86e7c12d" controls data-video-src="https://github.com/Snehal-Salvi/homemaid-app/assets/125987932/de197fb3-8e73-4478-ba3c-afcd86e7c12d"></video>
+                <div class="project-body">
+                    <h3 class="project-title">HomeMaid App</h3>
+                    <p class="project-desc">HomeMaid web application allows users to easily book maids for various household chores.</p>
+                    <ul class="project-tags">
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://667bc483d506d3c28237e931--lucky-sunflower-c1d185.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Snehal-Salvi/homemaid-app" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <video class="project-media" src="https://github.com/Snehal-Salvi/chatter-up/assets/125987932/094d84a6-a7e9-4b38-87ad-6b17b15871b2" controls data-video-src="https://github.com/Snehal-Salvi/chatter-up/assets/125987932/094d84a6-a7e9-4b38-87ad-6b17b15871b2"></video>
+                <div class="project-body">
+                    <h3 class="project-title">Chatter Up</h3>
+                    <p class="project-desc">Chatter Up is a real-time chat application that allows users to join rooms and communicate with others globally.</p>
+                    <ul class="project-tags">
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://chatter-up-frontend.onrender.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Snehal-Salvi/chatter-up" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <video class="project-media" src="https://github.com/Snehal-Salvi/to-do-App/assets/125987932/7171d547-cb97-42f6-b097-37a567bf24a3" controls data-video-src="https://github.com/Snehal-Salvi/to-do-App/assets/125987932/7171d547-cb97-42f6-b097-37a567bf24a3"></video>
+                <div class="project-body">
+                    <h3 class="project-title">Taskly</h3>
+                    <p class="project-desc">Taskly is a task management application built using React.js and integrated with a backend API for managing tasks.</p>
+                    <ul class="project-tags">
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://668ae61b3756a837d6160ef8--brilliant-babka-2bcbf0.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Snehal-Salvi/to-do-App" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <video class="project-media" src="https://github.com/user-attachments/assets/4631d457-283d-43d1-b39a-e6dd9e8bbb0c" controls data-video-src="https://github.com/user-attachments/assets/4631d457-283d-43d1-b39a-e6dd9e8bbb0c"></video>
+                <div class="project-body">
+                    <h3 class="project-title">Flow Builder</h3>
+                    <p class="project-desc">Chatbot Flow Builder lets users create flow diagrams by dragging and dropping nodes onto a canvas and connecting them to define the flow of data or processes.</p>
+                    <ul class="project-tags">
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://66697220847531a35a9ad5d2--dazzling-biscuit-38a492.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <a href="https://github.com/Snehal-Salvi/Chatbot-Flow-Builder" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card more-card">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <h3>More Projects on GitHub</h3>
+                <a href="https://github.com/Snehal-Salvi" target="_blank" class="btn btn-secondary">Visit GitHub</a>
+            </article>
+
+        </div>
+
+        <div id="videoModal" class="video-modal">
+            <div class="video-modal-content">
+                <span class="close-btn" role="button" tabindex="0" aria-label="Close video">&times;</span>
+                <video id="largeVideo" class="large-video" controls></video>
             </div>
-            <div class="project-card">
-              <video src="https://github.com/user-attachments/assets/4631d457-283d-43d1-b39a-e6dd9e8bbb0c" class="project-video" controls data-video-src="https://github.com/user-attachments/assets/4631d457-283d-43d1-b39a-e6dd9e8bbb0c"></video>
-              <div class="project-info">
-                  <h3 class="project-title">Flow Builder</h3>
-                  <p class="project-description">Chatbot Flow Builder is a web application that allows users to create flow diagrams by dragging and dropping nodes onto a canvas and connecting them to define the flow of data or processes.</p>
-                  <div class="project-tech-stack">
-                    <span class="tech-item"><i class="fab fa-react"></i> React</span>
-                      <span class="tech-item"><i class="fab fa-js-square"></i> JavaScript</span>
-                      <span class="tech-item"><i class="fab fa-html5"></i> HTML</span>
-                      <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS</span>
-                  </div>
-                  <div class="project-links">
-                      <a href="https://66697220847531a35a9ad5d2--dazzling-biscuit-38a492.netlify.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                      <a href="https://github.com/Snehal-Salvi/Chatbot-Flow-Builder" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                  </div>
-              </div>
-          </div>
-
-        
-
-      
-
-        <div class="additional-card">
-          <h2 class="more-projects-heading"><i class="fa-solid fa-plus"></i> More Projects on GitHub</h2>
-          <a href="https://github.com/Snehal-Salvi" target="_blank"><i class="fab fa-github"></i> Visit GitHub</a>
-      </div>
-  </div>
-
-     
-
-              <!-- Enlarged Video Modal -->
-              <div id="videoModal" class="video-modal">
-                  <div class="video-modal-content">
-                      <span class="close-btn">&times;</span>
-                      <video id="largeVideo" class="large-video" controls></video>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-  
-
-
-
-<section id="certificates">
-    <div class="section-header">
-        <div class="header-img">
-            <img src="./assets/certificates.png" alt="side-img"/>
         </div>
-        <div class="heading">Certificates</div>
-        <div class="header-img">
-            <img src="./assets/certificates.png" alt="side-img"/>
+    </section>
+
+    <section id="education" class="section reveal">
+        <p class="eyebrow">05 — Education</p>
+        <h2 class="section-title">Education</h2>
+        <div class="education-list">
+
+            <div class="education-item">
+                <div>
+                    <h3><i class="fa-solid fa-graduation-cap"></i> B.Tech in Civil Engineering</h3>
+                    <p>Dr. Babasaheb Ambedkar Technological University, Lonere · Raigad, India</p>
+                </div>
+                <div class="education-meta">
+                    <p>2017 — 2021</p>
+                    <p>CGPA: 8.23</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div>
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Higher Secondary Education</h3>
+                    <p>Rajabhau Mone College, Goregaon · Raigad, India</p>
+                </div>
+                <div class="education-meta">
+                    <p>2017</p>
+                    <p>75.54%</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div>
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Secondary School Education</h3>
+                    <p>N. M. Joshi Vidya Bhavan, Goregaon · Raigad, India</p>
+                </div>
+                <div class="education-meta">
+                    <p>2015</p>
+                    <p>90.20%</p>
+                </div>
+            </div>
+
         </div>
-      </div>
+    </section>
 
-      <div class="section-body">
-        <div class="carousel">
-          <button class="carousel-button prev">&#10094;</button>
-          <div class="certificate-section">
-            <div class="certificate">
-              <a href="https://drive.google.com/file/d/1zAZXDP_ukCyuIa5GNiozKt8ItFfKsqPW/view?usp=sharing" target="_blank">
-                  <img src="./assets/internship-cert.png" alt="internship-certificate"/>
-                  <div class="certificate-name"><h2>TA Internship</h2></div>
-                  <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-              </a>
-          </div>
-
-            <div class="certificate">
-              <a href="https://drive.google.com/file/d/1xAhpgjXdw-DF99_IE1W4pMXEttIw0X_A/view" target="_blank">
-                  <img src="./assets/react-cert.png" alt="react-certificate"/>
-                  <div class="certificate-name"><h2>React-Redux</h2></div>
-                  <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-              </a>
-          </div>
-          <div class="certificate">
-            <a href="https://drive.google.com/file/d/1WVtQlhylWgyrJUZOANIQBdFWibAB7iIb/view" target="_blank">
-                <img src="./assets/node-cert.png" alt="node-certificate"/>
-                <div class="certificate-name"><h2>Node JS</h2></div>
-                <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
+    <section id="certificates" class="section reveal">
+        <p class="eyebrow">06 — Certificates</p>
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <a class="cert-card" href="https://drive.google.com/file/d/1MsbrZDWH26GbTXNCEpxPPnzsz_7fR-57/view" target="_blank">
+                <i class="fa-solid fa-display"></i>
+                <span>Front End</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1XMAuyIDytDtYuP-HpqQYZUrFpYBnU-Y9/view" target="_blank">
+                <i class="fa-solid fa-server"></i>
+                <span>Back End</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1GWK7wdrwK_VcjmxJTkmr0QGkoEddyKop/view" target="_blank">
+                <i class="fa-solid fa-robot"></i>
+                <span>Generative AI</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1kEgRL8ynHFyG4f1F1DkJH6hvcjZwSspb/view" target="_blank">
+                <i class="fa-solid fa-database"></i>
+                <span>DBMS</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1CxSaU2n6I9JVzNxj9NBXxzCxFyk7yCi4/view" target="_blank">
+                <i class="fa-brands fa-react"></i>
+                <span>React</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1wWC7R-P8QloTHr16w6BwDrUclIXLaXxN/view" target="_blank">
+                <i class="fa-brands fa-java"></i>
+                <span>DSA (Java)</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1caLT0gphf6JmNiZFMz7u2wES0i6bS59S/view" target="_blank">
+                <i class="fa-solid fa-desktop"></i>
+                <span>Operating System</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1ZVYTA-gj1fU6Htu58i_nKkXey6_GCExY/view" target="_blank">
+                <i class="fa-brands fa-microsoft"></i>
+                <span>AZ-500</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1qFNkQwUE-FK7XTKB004ozU4vpi-_CdqJ/view" target="_blank">
+                <i class="fa-brands fa-microsoft"></i>
+                <span>AZ-900</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1yNVF0PDaVGq3ueUvDep2QFnkNNCfBQME/view" target="_blank">
+                <i class="fa-brands fa-microsoft"></i>
+                <span>MB-910</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1GNKGqOwE6WNvUR3uvqhCzxnH2tSDqwmD/view" target="_blank">
+                <i class="fa-brands fa-microsoft"></i>
+                <span>PL-900</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1Rc35YQSN6IQu5IONDQsNJx5X7G0GeUd7/view" target="_blank">
+                <i class="fa-brands fa-microsoft"></i>
+                <span>SC-900</span>
+            </a>
+            <a class="cert-card" href="https://drive.google.com/file/d/1dyZIT2qIDrD8gfoMdbK_wC_WVpB-1QPs/view" target="_blank">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>TA Internship</span>
             </a>
         </div>
-        <div class="certificate">
-          <a href="https://drive.google.com/file/d/15GsvH8m36pFBlbFDVDtqJLOAXbqUUzMd/view" target="_blank">
-              <img src="./assets/java-cert.png" alt="java-certificate"/>
-              <div class="certificate-name"><h2>Java</h2></div>
-              <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-          </a>
-      </div>
-      <div class="certificate">
-        <a href="https://drive.google.com/file/d/1tJOb6nUipE3GLncecuoK2HASSBvW8ILb/view" target="_blank">
-            <img src="./assets/dbms-cert.png" alt="dbms-certificate"/>
-            <div class="certificate-name"><h2>DBMS</h2></div>
-            <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-        </a>
-    </div>
-    <div class="certificate">
-      <a href="https://drive.google.com/file/d/1FqpQntRAW4rpiAEbfu2BPDbpuVV_D7dh/view" target="_blank">
-          <img src="./assets/os-cert.png" alt="os-certificate"/>
-          <div class="certificate-name"><h2>Operating System</h2></div>
-          <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-      </a>
-  </div>
-  <div class="certificate">
-    <a href="https://drive.google.com/file/d/1FxW-wWB1oF0B-PA_HahkOCUe0zOwUTYH/view?usp=sharing" target="_blank">
-        <img src="./assets/sd-cert.png" alt="system-design-certificate"/>
-        <div class="certificate-name"><h2>System Design</h2></div>
-        <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-    </a>
-</div>
-<div class="certificate">
-  <a href="https://drive.google.com/file/d/1H9azDPnA-ZfHTqLMd9TDhI_ofBaoLySI/view?usp=sharing" target="_blank">
-      <img src="./assets/apti-cert.png" alt="aptitude-certificate"/>
-      <div class="certificate-name"><h2>Aptitude</h2></div>
-      <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-  </a>
-</div>
-<div class="certificate">
-  <a href="https://drive.google.com/file/d/1YqPUXkXMXAK2F0xAjiso7hcuirFfC4as/view?usp=sharing" target="_blank">
-      <img src="./assets/microsoft-cert.png" alt="az500-certificate"/>
-      <div class="certificate-name"><h2>AZ-500</h2></div>
-      <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-  </a>
-</div>
+    </section>
 
-<div class="certificate">
-  <a href="https://drive.google.com/file/d/1czoPrEnwocIm27pLJXX7BGs_Gn5qn6V1/view?usp=sharing" target="_blank">
-      <img src="./assets/microsoft-cert.png" alt="az900-certificate"/>
-      <div class="certificate-name"><h2>AZ-900</h2></div>
-      <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-  </a>
-</div>
+    <section id="contact" class="section reveal">
+        <p class="eyebrow">07 — Contact</p>
+        <h2 class="section-title">Let's Build Something</h2>
+        <p class="contact-lead">I'm currently open to new opportunities and interesting problems to solve. Whether you have a question or just want to say hi, my inbox is open.</p>
+        <div class="contact-links">
+            <a class="contact-link" href="mailto:snehalsalvi099@gmail.com"><i class="fa-solid fa-envelope"></i> snehalsalvi099@gmail.com</a>
+            <a class="contact-link" href="tel:+917448064203"><i class="fa-solid fa-phone"></i> +91 7448064203</a>
+            <a class="contact-link" href="https://linkedin.com/in/snehalsalvi" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/snehalsalvi</a>
+            <a class="contact-link" href="https://github.com/Snehal-Salvi" target="_blank"><i class="fab fa-github"></i> github.com/Snehal-Salvi</a>
+        </div>
+    </section>
 
-<div class="certificate">
-  <a href="https://drive.google.com/file/d/1NYrgEkBfG4eSuxfa2ijfAAguFI2QK-80/view?usp=sharing" target="_blank">
-      <img src="./assets/microsoft-cert.png" alt="mb910-certificate"/>
-      <div class="certificate-name"><h2>MB-910</h2></div>
-      <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-  </a>
-</div>
+</main>
 
-<div class="certificate">
-  <a href="https://drive.google.com/file/d/1NGsHv6OzxKgwHIUJUTBXyuz1eGNjcUr-/view?usp=sharing" target="_blank">
-      <img src="./assets/microsoft-cert.png" alt="pl900-certificate"/>
-      <div class="certificate-name"><h2>PL-900</h2></div>
-      <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-  </a>
-</div>
+<footer class="footer">
+    <p>&copy; <span id="currentYear"></span> Snehal Salvi. Built with HTML, CSS &amp; JS.</p>
+</footer>
 
-<div class="certificate">
-  <a href="https://drive.google.com/file/d/1MASaETWsv28lDAohbraNsZq9pgxgW70D/view?usp=sharing" target="_blank">
-      <img src="./assets/microsoft-cert.png" alt="sc900-certificate"/>
-      <div class="certificate-name"><h2>SC-900</h2></div>
-      <div class="certificate-icon"><i class="fa fa-external-link-alt"></i></div>
-  </a>
-</div>
-          
-          </div>
-          <button class="carousel-button next">&#10095;</button>
-      </div>
-      </div>
-
-</section>
-
-<section id="contact">
-    <div class="section-header">
-      <div class="header-img">
-        <img src="./assets/contact.png" alt="side-img"/>
-      </div>
-      <div class="heading">Contact</div>
-      <div class="header-img">
-        <img src="./assets/contact.png" alt="side-img"/>
-      </div>
-    </div>
-  
-    <div class="contact-section">
-      <div class="contact-form">
-        <h2>Get in Touch</h2>
-        <form id="contactForm">
-          <div class="input-group">
-            <input type="text" id="name" name="name" placeholder="Your Name" required />
-          </div>
-          <div class="input-group">
-            <input type="email" id="email" name="email" placeholder="Your Email" required />
-          </div>
-          <div class="input-group">
-            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-          </div>
-          <button class="contact-button" type="submit">Send Message</button>
-        </form>
-      </div>
-      <div class="contact-info">
-        <h2>Contact Info</h2>
-        <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
-        <p><i class="fas fa-phone-alt"></i> +91 7448064203</p>
-        <p><i class="fas fa-envelope"></i><a href="mailto:snehalsalvi099@gmail.com"> snehalsalvi099@gmail.com</a></p>
-        <p><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/snehalsalvi" target="_blank"> LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  
-  
-
-<!-- JS Script -->
 <script type="text/javascript" src="script.js"></script>
 
 </body>

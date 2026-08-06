@@ -1,219 +1,93 @@
- 
-
-
-@media (max-width: 1200px) {
-    
-
-   
-    .right-section li {
-        font-size: 18px;
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 140px;
+        gap: 40px;
     }
 
-    
-    td img {
-        width: 60px;
-        height: 80px;
-      }
-}
-
-@media (max-width: 980px) {
-  
-    .left-section, .right-section {
-        padding: 10px;
-    }
-  
-  
-    .right-section li {
-        font-size: 16px;
+    .hero-inner {
+        max-width: 100%;
     }
 
-    td img {
-        width: 60px;
-        height: 80px;
-      }
-     
-      .certificate {
-        flex: 0 0 50%;
+    .hero-summary {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions,
+    .hero-socials {
+        justify-content: center;
+    }
+
+    .hero-photo-ring {
         width: 200px;
-        height: 300px;
-        font-size: 1.5em;
+        height: 200px;
     }
 
+    .hero-badge {
+        right: 0;
+    }
+
+    .scroll-cue {
+        display: none;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
 
-@media (max-width: 786px) {
-
-  
-
-    .section-header,.header-img, .heading{
-        height: 8vh;
-        padding: 0px;
-        
-    }
-    
-    .home-container {
-        flex-direction: column;
-    }
-
-    
-   
-    
-    .about-section{
-        height: 70vh;
-        overflow: auto;
-        
-    }
-    
-    .about-section p, .about-section h3, .about-section ul {
-        font-size: 1.5rem;
-    }
-
-    .experience-section {
-        flex-direction: column;
-        height: auto;
-      padding: 5px;
-
-    }
-
-    .experience-details {
-        width: 80%; 
-        height: 50vh;
-        margin-bottom: 20px;
-       
-    }
-
-    .work-info li{
-       font-size: 20px;
-       margin: 2px;
-    }
-
-    hr {
-        width: 15px;
-        height: 10vh;
-        margin-left: 45px;
-        border-top: 0;
-        border-left: 2px dashed white;
-        transform: translateY(0);
-        
-    }
-
-    .airplane-icon {
+@media (max-width: 720px) {
+    .nav-links {
+        position: fixed;
         top: 0;
-        left: 50%;
-        transform: rotate(90deg);
-        animation: moveAirplaneVertical 10s linear infinite;
-    }
-
-    @keyframes moveAirplaneVertical {
-        0% {
-            top: 0;
-        }
-        100% {
-            top: calc(100% - 24px); 
-        }
-    }
-
-    table, thead, tbody, th, td, tr {
-        display: block;
-        width: 100%;
-    }
-    thead {
-        display: flex;
-    }
-    thead th {
-        flex: 1;
-        height: 120px;
-        padding: 10px;
-        
-    }
-    tbody {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    tbody tr {
-        display: flex;
-        flex: 1 1 100%;
-    }
-    tbody td {
-        flex: 1;        
-    } 
-
-    td img {
-        width: 100px;
-        height: 80px;
-        
-      }
-
-      .experience-details,.work-info{    
-        height: fit-content;
-       
-      }
-
-      .company-logo-name, .company-name, .company-designation,.company-period{
-        height: 5vh;
-        font-size: 15px;
-      }
-
-      .video-modal-content {
-        width: 95%;
-    }
-    .close-btn {
-        top: 5px;
-        right: 10px;
-        font-size: 25px;
-    }
-
-
-      
-
-      .contact-section {
+        right: 0;
+        height: 100vh;
+        width: min(75%, 300px);
+        background: var(--bg-elevated);
         flex-direction: column;
-      }
+        align-items: flex-start;
+        padding: 100px 32px;
+        gap: 24px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        border-left: 1px solid var(--border);
+    }
 
-      .input-group input, .input-group textarea {
-        font-size: 0.4em; 
-      }
-    
-      .contact-info p {
-        font-size: 0.9em;  
-      }
-    
+    .nav-links.is-open {
+        transform: translateX(0);
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .timeline-entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education-item {
+        flex-direction: column;
+    }
+
+    .education-meta {
+        text-align: left;
+    }
 }
 
- 
-@media (max-width: 468px) {
-
-    .name h1 {
-      
-        font-size: 30px;
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
     }
 
-    .name h3{
-        font-size: 15px;
+    .section {
+        padding: 70px 20px;
     }
 
-    .section-header,.header-img, .heading{
-        height: 8vh;
-        padding: 0px;
-        
+    .cert-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     }
-
-    
-
-    .right-section li {
-        font-size: 12px;
-    }
-
-    .about-section{
-        height: 70vh;
-        overflow: auto;
-        
-    }
-
-    .about-section p, .about-section h3, .about-section ul {
-        font-size: 1.5rem;
-    }
-
-   
-   
 }
