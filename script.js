@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const CAREER_START_DATE = new Date(2021, 11, 24); // Dec 24, 2021
+    const CAREER_START_DATE = new Date(2021, 8, 1); // Sep 1, 2021 (Coding Ninjas internship start)
 
     function updateYearsOfExperience() {
         const now = new Date();
